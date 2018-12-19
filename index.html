@@ -1,0 +1,122 @@
+<!-- 
+  MADE BY ROSHAN SINGH
+  https://github.com/singhroshan1999
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Collapse-able FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
+  <style>
+ 
+        /* collapse-start */
+        .plus {float: right;line-height: 66px;}
+        .ques {line-height: 66px;display:block;padding-left: 10px;padding-right: 10px;color:#006288; background-color:whitesmoke;
+          transition: background-color 1s,color 1s;
+        }
+        .ques:hover{  background-color: #006288;
+          color: whitesmoke;
+          transition: background-color 1s,color 1s;}
+        .quesCollapse {
+          border-left:3px solid #3bcdd8;
+
+        margin-bottom: 20px;
+        
+        font-size: 15px;font-weight: bold; font-family: 'Helvetica', sans-serif;letter-spacing: 0.3px;
+        transition: background-color 1s,color 1s;
+        }
+
+        .quesCollapse a:hover{text-decoration: none}
+        .quesContent {background-color:white;padding: 0px;font-size: 12px;font-weight: normal;position: relative;;color: slategrey;margin-bottom: 20px;}
+        /* collapse end */
+        .social-btn {margin-right:10px;}
+        .social-btn-foot {color:black;margin: 5px;}
+        .btn-sp {margin-bottom: 10px;}
+        </style>
+        </head>
+<body style="background-color:#29b6f6">
+
+<div id="faq" class="container-fluid" style="padding-top:70px;padding-bottom:70px;background-color:#29b6f6 ">
+  
+<div id="faqCollapse" class="container" style="max-width:630px" >
+  <div>
+    <div id="0" class="quesCollapse">
+      <div>
+    <a href="#qId"  data-toggle="collapse">
+  <div class="ques">This is place Holder?<i class="fa fa-plus plus"></i></div>
+  </a>
+  <div  id="qId" class="collapse quesContent" data-parent="#faqCollapse">
+    <div style="padding:30px ">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div> 
+  </div>
+  </div>
+  </div>
+  
+  <div id="1" class="quesCollapse">
+    <div>
+      <a href="#qId2"  data-toggle="collapse">
+    <div class="ques">This is place Holder?<i class="fa fa-plus plus"></i></div>
+    </a>
+    <div  id="qId2" class="collapse quesContent" data-parent="#faqCollapse">
+      <div style="padding:30px ">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div> 
+    </div>
+  </div>
+    </div>
+  
+    <div id="3" class="quesCollapse">
+        <div>
+      <a href="#qId3"  data-toggle="collapse">
+    <div class="ques">This is place Holder?<i class="fa fa-plus plus"></i></div>
+    </a>
+    <div  id="qId3" class="collapse quesContent" data-parent="#faqCollapse">
+      <div style="padding:30px ">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div> 
+    </div>
+    </div>
+    </div>
+  
+    <div id="4" class="quesCollapse">
+        <div>
+      <a href="#qId4"  data-toggle="collapse">
+    <div class="ques">This is place Holder?<i class="fa fa-plus plus"></i></div>
+    </a>
+    <div  id="qId4" class="collapse quesContent" data-parent="#faqCollapse">
+      <div style="padding:30px ">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div> 
+    </div>
+    </div>
+    </div>
+  
+    </div>
+  </div>
+  
+</div>
+
+
+<script>
+  function sign(orig){
+    $(orig.target).prev().find(".fa").toggleClass("fa-plus fa-minus");
+  }
+    $(document).ready(function(){
+
+        $(".collapse").on('shown.bs.collapse',sign);
+  
+        $(".collapse").on('hidden.bs.collapse', sign);
+    });
+</script>
+</body>
+</html>
